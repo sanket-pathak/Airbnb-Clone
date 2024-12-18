@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="/static/show.css">
+</head>
+<body>
+    <h2 class="title"><%=item.title%></h2>
+    <img class="image" src=<%=item.image.url%> alt="Get a good internet, idiot">
+    <p class="description"><%=item.description%></p>
+    <h3>₹<%=item.price%></h3>
+    <p class="country"><%=item.location%>, <%=item.country%></p>
+    <form action="http://localhost:8080/listings">
+        <button>Back</button>
+    </form>
+
+</body>
+</html>
